@@ -1,0 +1,7 @@
+{
+  "name": "sortable-web",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
