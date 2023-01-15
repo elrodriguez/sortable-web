@@ -1,20 +1,54 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+  <div class="container py-3">
+    <app-header-main></app-header-main>
+    <div class="row">
+      <div class="col-sm-9">
+        <div class="pb-3">
+          <div class="card">
+            <div class="card-header">Escriba o pegue texto</div>
+            <div class="card-body">
+              <textarea class="form-control" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <div class="card-header">Aqui se mostrara el resultado</div>
+            <div class="card-body">
+              <textarea class="form-control" rows="10" readonly></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="mb-3">
+              <label class="form-label">Nivel</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccionar</option>
+                <option value="1">Basico</option>
+                <option value="2">Medio</option>
+                <option value="3">Avanzado</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Idioma</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccionar</option>
+                <option value="1">Ingles</option>
+                <option value="2">Español</option>
+              </select>
+            </div>
+            <div class="d-grid gap-2 mx-auto">
+              <button type="button" class="btn btn-warning">
+                Parafrasear Texto
+              </button>
+              <button type="button" class="btn btn-danger">Limpiar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </ion-content>
